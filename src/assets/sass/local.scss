@@ -112,7 +112,7 @@
             list-style: none;
             margin: 0;
             /* 12px - 20px */
-            padding: clamp(.75rem, 1vw, 1.25rem);
+            padding: clamp(.75rem, 0vw, 1.25rem);
             border-radius: calc(12/16 * 1rem);
             background-color: #fff;
             overflow: hidden;
@@ -312,7 +312,7 @@
 
         .cs-picture {
             height: auto;
-            min-height: calc(212/16 * 1rem);
+            min-height: 12.25rem;
             max-height: 100%;
         }
 
