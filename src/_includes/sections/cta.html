@@ -2,31 +2,45 @@
 <!--                     CTA                      -->
 <!-- ============================================ -->
 
-<section id="cta-51">
+<section id="contact-2251">
     <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Contact Us</span>
-            <h2 class="cs-title">Get It Done With Us Today</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis at sit pellentesque molestie.  Diam, adipiscing ultrices eu turpis gravida.
-            </p>
-            <a href="/contact/" class="cs-button-solid">Get A Free Quote</a>
+        <!--Copy and paste any iframe from Google Maps-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4478.295195555664!2d-97.75624262443044!3d30.455069674719386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644cd1266404665%3A0xf10bc170fe6be411!2s13424%20Tossa%20Ln%2C%20Austin%2C%20TX%2078729!5e1!3m2!1sen!2sus!4v1758990856481!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="cs-wrapper">
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h2 class="cs-title">Fast, Reliable Mobile Locksmith Services in Austin</h2>
+                <p class="cs-text">
+                    We're available 24/7 for emergency lockouts, lock repairs, key replacements, and security installations. Our certified technicians come to you with fully equipped mobile units, ensuring quick and professional service wherever you are in the Austin area.
+                </p>
+            </div>
+            <form class="cs-form" id="cs-form-2251" name="Contact Form" method="post">
+                <label class="cs-label">
+                    <input class="cs-input" required type="text" id="name-2251" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label">
+                    <input class="cs-input" required type="email" id="email-2251" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label">
+                    <input class="cs-input" type="tel" id="phone-2251" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    <select class="cs-select" name="service" id="services-2251">
+                        <option value="Emergency Lockout">Emergency Lockout</option>
+                        <option value="Lock Installation">Lock Installation</option>
+                        <option value="Key Replacement">Key Replacement</option>
+                        <option value="Lock Repair">Lock Repair</option>
+                        <option value="Security Upgrade">Security Upgrade</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <label class="cs-label cs-message">
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-2251" placeholder="Describe your locksmith needs or emergency situation"></textarea>
+                </label>
+                <div class="cs-button-wrapper">
+                    <button class="cs-button-solid cs-submit" type="submit">Request Service</button>
+                </div>
+            </form>
         </div>
     </div>
-    <!-- Background Image-->
-    <picture class="cs-picture">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 812 }) | avif %}" type="image/avif">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 812 }) | webp %}" type="image/webp">
-        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 812 }) | jpeg %}" type="image/jpeg">
-        <!--Tablet Image-->
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 750 }) | avif %}" type="image/avif">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 750 }) | webp %}" type="image/webp">
-        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2048, height: 750 }) | jpeg %}" type="image/jpeg">
-        <!--Desktop Image-->
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | avif %}" type="image/avif">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | webp %}" type="image/webp">
-        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | jpeg %}" type="image/jpeg">
-        <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 555 }) | jpeg %}" alt="cabinets" width="1920" height="426" loading="lazy" decoding="async">
-    </picture>
 </section>

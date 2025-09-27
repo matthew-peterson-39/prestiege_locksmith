@@ -7,6 +7,7 @@ function enableDarkMode() {
     document.body.classList.add("dark-mode");
     localStorage.setItem("theme", "dark");
 }
+
 function disableDarkMode() {
     document.body.classList.remove("dark-mode");
     localStorage.setItem("theme", "light");
@@ -31,10 +32,10 @@ function detectColorScheme() {
 }
 
 // run on page load
-detectColorScheme();
+// detectColorScheme();
+disableDarkMode();
 
 // add event listener to the dark mode button toggle
-document.getElementById("dark-mode-toggle").addEventListener("click", () => {
-    // on click, check localStorage for the dark mode value, use to apply the opposite of what's saved
-    localStorage.getItem("theme") === "light" ? enableDarkMode() : disableDarkMode();
-});
+// document.getElementById("dark-mode-toggle").addEventListener("click", () => {
+//     localStorage.getItem("theme") === "light" ? enableDarkMode() : disableDarkMode();
+// });

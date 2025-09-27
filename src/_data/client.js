@@ -1,6 +1,6 @@
 module.exports = {
-    name: "Code Stitch Web Designs",
-    email: "help@codestitch.app",
+    name: "Polycoded Web Designs",
+    email: "help@Polycoded.app",
     phoneForTel: "555-779-4407",
     phoneFormatted: "(555) 779-4407",
     address: {
